@@ -14,6 +14,7 @@ from tensorflow.keras.preprocessing.image import load_img
 from tensorflow.keras import utils
 from PIL import Image
 import numpy as np
+import cv2
 
 model = load_model("paintings.h5")
 
