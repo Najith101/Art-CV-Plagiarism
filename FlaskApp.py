@@ -18,6 +18,8 @@ import cv2
 
 model = load_model("paintings.h5")
 
+app = Flask(__name__)
+
 def preprocess(img):
   #grayscaling images
   grayimg = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -44,7 +46,7 @@ def predict(location, model):
     pred_made = categories[1]
   return pred_made
 
-app = Flask(__name__)
+
 
 
 @app.route('/')
