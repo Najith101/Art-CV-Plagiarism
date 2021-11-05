@@ -7,6 +7,7 @@
 from flask import Flask, request, jsonify, render_template,redirect, url_for, request,json
 from werkzeug.utils import secure_filename
 import os
+import cv2
 
 from tensorflow import keras
 from tensorflow.keras.models import load_model
